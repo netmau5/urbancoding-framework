@@ -1,0 +1,104 @@
+header.primary {
+  background: url('../images/black-linen.jpg');
+  color: white;
+  border-bottom: $border-transparent-dark;
+  padding: 10px 0;
+  z-index: 999;
+  @include inset-box-shadow(0, -3);
+
+  h1 { cursor: pointer; }
+
+  h1.logo {
+    background: url('../images/logo-header3.png') center center no-repeat;
+    height: 48px;
+    width: 48px;
+    float: left;
+  }
+
+  h1.name {
+    text-transform: uppercase;
+    font-size: 24px;
+    float: left;
+    line-height: 48px;
+    margin: 0 0 0 8px;
+    position: relative;
+    top: 3px;
+    text-shadow: 0 1px 0 black;
+  }
+
+  nav {
+    float: right;
+    line-height: 18px;
+    padding-top: 6px;
+    
+    li {
+      float: left;
+      margin: 0 0 0 20px;
+      padding: 0 0 0 20px;
+      border-left: $border-transparent-light;
+      
+      &:first-child { border-left: 0; margin-left: 0; padding-left: 0; }
+      
+      a {
+        font-size: 18px;
+        color: white;
+        text-shadow: 0 0 0 #fff;
+        &:hover { color: white; }
+      }
+      .subtext {
+        font-size: 14px;
+        display: block;
+        color: #cecece;
+      }
+      
+      a.selected {
+        font-weight: bold;
+        .subtext { color: white; }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 480px) { 
+  
+  header.primary {
+
+    text-align: center;
+
+    h1 {
+      float: none !important;
+      text-align: center;
+    }
+
+    h1.name {
+      position: static;
+      width: 300px;
+      height: 24px;
+      line-height: 24px;
+      margin: 6px auto 0 auto;
+    }
+
+    h1.logo { 
+      background-position: center center;
+      width: 100%;
+    }
+
+    nav {
+      display: none;
+      float: none;
+
+      ul {
+        width: 340px;
+        margin: 0 auto;
+      }
+
+      li { 
+        border-left: 0; 
+
+        .subtext { display: none; }  
+      }
+    }
+  }
+
+}

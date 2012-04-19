@@ -1,0 +1,79 @@
+
+/* BEGIN <TYPOGRAPHY> */
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-normal;
+  letter-spacing: .03em;
+  line-height: 1.5;
+}
+
+p {
+  font-family: $font-family-body;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* END <TYPOGRAPHY> */
+
+/* BEGIN <GENERAL> */
+
+a.button {
+  display:block; 
+  float:left; 
+  line-height:60px; 
+  height:60px; 
+  padding:0 30px 0 66px; 
+  font-size:20px; 
+  letter-spacing: 1px;
+  text-decoration:none; 
+  background:#fbe6e6; 
+  border:solid 1px #914207; 
+  text-transform:uppercase; 
+  font-weight:bold; 
+  color:#914207; 
+  margin-right:20px; 
+  -moz-border-radius:5px; 
+  -khtml-border-radius:5px; 
+  -webkit-border-radius:5px; 
+  border-radius:5px;
+  }
+a.button:hover {
+  color:#652e05; 
+  border-color:#652e05; 
+  -moz-box-shadow:0 2px 2px rgba(80, 80, 80, 0.2); 
+  -webkit-box-shadow:0 2px 2px rgba(80, 80, 80, 0.2); 
+  box-shadow:0 2px 2px rgba(80, 80, 80, 0.2);
+}
+a.button:active {
+  box-shadow: 0;
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  position: relative;
+  top: 2px;
+}
+
+ol, ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  filter: alpha(opacity = 30);
+  clear: both;
+  height: 0;
+  margin-bottom: 1em;
+}
+
+section {
+  border-top: $border-transparent-light;
+  border-bottom: $border-transparent-dark;
+}
+
+/* END <GENERAL> */
